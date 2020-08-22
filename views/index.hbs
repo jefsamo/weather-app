@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./images/download.jpg" />
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-inner">
+        <a href="/map" class="btn">Navigate to map &rarr;</a>
+        <div class="form">
+            <form action="" class="formik">
+                <input class="search" type="text" name="search" id="searchInput" placeholder="Enter Location..." />
+                <input type="submit" class="submit" value="Search.." />
+            </form>
+        </div>
+        <i class="fas">&#xf740;</i>
+        <div class="bg-inner-bottom">
+            <div class="left">
+                <div class="weatherInfo">
+                    <div class="temperature"></div>
+                    <div class="description">
+                        <h1 class="err"></h1>
+                        <h1 class="desc"></h1>
+                        <h1 class="city"></h1>
+                        <p class="lat-lng"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h2 class="time">TIME</h2>
+                <h1 id="get-time"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
